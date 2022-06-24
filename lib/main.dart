@@ -20,9 +20,9 @@ class ListaDeDividas extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Lista de Dividas'),
+        title: const Text('Lista de Dividas'),
       ),
-      body: Text('Teste'),
+      body: const Text('Teste'),
     );
   }
 }
@@ -32,7 +32,7 @@ class ListaDeClientes extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Lista de Clientes'),
+        title: const Text('Lista de Clientes'),
       ),
       body: Column(
         children: [
@@ -43,7 +43,7 @@ class ListaDeClientes extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }
