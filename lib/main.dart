@@ -9,11 +9,10 @@ class EasychargeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: ListaDeClientes(),
+      theme: ThemeData(
+        primaryColor: Colors.grey[700],
       ),
+      home: ListaDeClientes(),
     );
   }
 }
-
-

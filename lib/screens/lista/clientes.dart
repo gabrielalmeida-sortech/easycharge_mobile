@@ -9,7 +9,7 @@ class ListaDeClientes extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Lista de Clientes'),
       ),
-      body: Column(
+      body: ListView(
         children: [
           ItemCliente(Cliente('Gabriel', 1)),
           ItemCliente(Cliente('Vitória', 2)),
@@ -33,7 +33,7 @@ class ItemCliente extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
-        leading: const Icon(Icons.person),
+        leading: const Icon(Icons.people),
         title: Text(_cliente.nome),
         subtitle: Text(_cliente.id.toString()),
       ),
